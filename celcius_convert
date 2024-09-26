@@ -1,0 +1,41 @@
+(*
+*
+*       Latihan
+*       Celcius Converter (pascal)
+*       Updated on 25/09/2024
+*           
+*
+*)
+
+// Headers
+  
+program KonversiSuhu;
+uses crt;
+
+// Main
+
+var
+    Suhu, Faren, Kelvin, Reamur : integer;
+
+begin
+    clrscr;
+
+    WriteLn('=====================');
+    WriteLn('    Konversi Suhu    ');
+    WriteLn('=====================');
+    Write(' Input Suhu Celsius :  ');
+    ReadLn(Suhu);
+
+    Faren := (Suhu * 9 div 5) + 32;
+    Kelvin := Suhu + 273;
+    Reamur := Suhu * 4 div 5;
+
+    clrscr;
+
+    WriteLn('=====================');
+    WriteLn('        Hasil        ');
+    WriteLn('=====================');
+    WriteLn('Suhu ', Suhu ,'c = ', Faren ,' Farenheit');
+    WriteLn('Suhu ', Suhu ,'c = ', Kelvin ,' Kelvin');
+    WriteLn('Suhu ', Suhu ,'c = ', Reamur ,' Reamur');
+end.
